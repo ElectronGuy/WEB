@@ -1,0 +1,62 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.headerStyle {
+  background-color: #ccffcc;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.background-video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  margin-top: 12px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cards_top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards_middel1 {
+  display: flex;
+  justify-content: space-around;
+}
+.cards_middel2 {
+  display: flex;
+  justify-content: space-around;
+}
+.cards_bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text {
+  text-align: center;
+  direction: rtl;
+}
+
+.card-calories {
+  font-size: small;
+  text-align: center;
+}

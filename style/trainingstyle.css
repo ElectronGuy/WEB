@@ -1,0 +1,85 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+.headerStyle{
+    background-color: #ccffcc;
+    margin:0;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    padding:0;
+}
+
+.mainTitle{
+    text-align: center;
+    animation: fadeInAnimation ease 7s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2{
+    text-align:center;
+}
+
+
+
+main{
+    width:100%;
+    margin:0;
+    padding: 0;
+    background: linear-gradient(to right, #ccffcc, white);
+}
+
+.row{
+    margin-left: auto; margin-right: auto;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+header{
+    margin-bottom:0;
+}
+.imgSize{
+    height:300px;
+    width:300px;
+}
+
+.container-chest {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.chest {
+flex: 1 0 30%; /* this will make each div take up 1/3 of the container's width */
+margin: 10px;
+background-color: #EAFAF1; /* this sets the background color of the div */
+transition: all 0.3s ease; /* this sets a smooth transition effect for hover */
+}
+
+.chest:hover {
+transform: scale(1.1); /* this increases the size of the div by 10% on hover */
+box-shadow: 2px 2px 5px #aaa; /* this adds a subtle shadow on hover */
+background-color: #EAFAF1 ; /* this changes the background color on hover */
+}
+
+

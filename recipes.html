@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>IDG - Training</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a33f9f7185.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/recipesStyle.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 headerStyle">
+          <img src="images/IDG.png" height="250" width="250" />
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-md bg-light navbar-light"
+        style="width: 100%"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mr-left">
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-pinterest-p"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#">צור קשר</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#">התחברות</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#">הרשמה</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="coaches.html">המאמנים שלנו</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipes.html">מתכונים</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">בניית תפריט</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="includes/training.php">אימונים</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">דף הבית</a>
+            </li>
+            <li class="nav-item">
+              <img src="images/dumbell.png" alt="..." height="36" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <video autoplay loop muted class="background-video">
+        <source
+          src="./videos/istockphoto-1181670894-640_adpp_is.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="cards_top">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/Recipe-5285.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">378 קלוריות</p>
+            <p class="card-text">
+              <b> קציצות עוף אפויות בתנור: </b>
+              <br />
+              חזה עוף טחון - 500 גרם
+              <br />
+              בצל קצוץ דק - יחידה בינונית
+              <br />
+              4 שיני שום קצוצות
+              <br />
+              צרור פטרוזיליה קצוצה
+              <br />
+              מעט נענע קצוצה
+              <br />
+              כף שמן זית
+              <br />
+              מלח ופלפל שחור לפי הטעם
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/images-salad.jpg  "
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">310 קלוריות</p>
+            <p class="card-text">
+              <b> מיקס עלי בייבי וירקות קלויים: </b>
+              <br />
+              חצי חבילה תערובת עלי בייבי
+              <br />
+              2 פטריות פורטובלו בינוניות
+              <br />
+              1/2 כוס גזר גמדי קטן במיוחד
+              <br />
+              שום כתוש מוקפא - 1/2 כפית
+              <br />
+              כף שמן קוקוס
+              <br />
+              חומץ בלסמי - 2½ כפית
+              <br />
+              מלח ופלפל שחור לפי הטעם
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/mukpatsc.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">487 קלוריות</p>
+            <p class="card-text">
+              <b> מוקפץ ירקות ונודלס: </b>
+              <br />
+              נודלס להקפצה - אריזת ניילון
+              <br />
+              פלפל צהוב, פלפל אדום, שני גזרים, שני בצלים, קישוא,כוס אפונה,פטריות
+              שימפניון וחמש שיני שום
+              <br />
+              כף צ'ילי מתוק וכף דבש
+              <br />
+              2 כפות רוטב סויה
+              <br />
+              כף אבקת מרק עוף
+              <br />
+              מלח ופלפל שחור לפי הטעם
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards_middel1">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/salmon (1).jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">520 קלוריות</p>
+            <p class="card-text">
+              <b> סלמון חרדל ודבש: </b>
+              <br />
+              סלמון אטלנטי - 800 גרם
+              <br />
+              כף דבש
+              <br />
+              כף חרדל דיז'ון וחופן גרגרי חרדל
+              <br />
+              3 כפות שמן זית
+              <br />
+              2 שיני שום
+              <br />
+              כפית צ'ילי גרוס
+              <br />
+              מלח ופלפל שחור לפי הטעם
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/images cake.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">431 קלוריות</p>
+            <p class="card-text">
+              <b> עוגת שוקולד בריאה: </b>
+              <br />
+              4 ביצים
+              <br />
+              3 כפות אבקת קקאו
+              <br />
+              שמן קנולה - 3/4 כוס
+              <br />
+              מיץ תפוזים - 1/4 כוס
+              <br />
+              שקדים טבעיים טחונים
+              <br />
+              קמח שיפון מלא - 125 גרם
+              <br />
+              שקית של אבקת אפיה וסוכר וניל
+              <br />
+              2 כפות של ממרח בטעם שוקולד
+              <br />
+              תרסיס שמן קנולה
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/download_fruit.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">425 קלוריות</p>
+            <p class="card-text">
+              <b> סלט פירות מרענן: </b>
+              <br />
+              פירות חתוכים לקוביות (כל מה שיש לכם במקרר): תפוז, קלמנטינה, בננה,
+              תפוח, אגס, ענבים, אפרסמון, תות שדה, קיווי, מלון, פירות יער, אננס.
+              <br />
+              מיץ תפוזים
+              <br />
+              אגוזי מלך חתוכים גס (לא חובה)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cards_middel2">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/pasta_1280.jpeg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">436 קלוריות</p>
+            <p class="card-text">
+              <b> פסטה עם טופו, ערמונים וקשיו: </b>
+              <br />
+              חצי חבילת פסטה מבושלת
+              <br />
+              חבילת ערמונים בואקום
+              <br />
+              150 גרם טופו
+              <br />
+              בצל ענקי או שניים בינוניים
+              <br />
+              חופן עירית קצוצה להגשה
+              <br />
+              1 כף גדושה סילאן
+              <br />
+              1 כף שמן שומשום
+              <br/>
+              1/4 כוס סויה
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/jfirejfrjo_c.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">287 קלוריות</p>
+            <p class="card-text">
+              <b> סלט עוף וכרוב ברוטב בלסמי: </b>
+              <br />
+              רבע כרוב לבן
+              <br />
+              רבע בצל סגול
+              <br />
+              חצי כוס סלרי קצוץ (כולל העלים)
+              <br />
+              כף וחצי חומץ בלסמי
+              <br />
+              3 כפות שמן זית
+              <br />
+              רבע כפית מלח
+              <br />
+              רבע כפית פלפל שחור
+              <br />
+              2 פרוסות חזה עוף
+              <br />
+              כפית חרדל דיז'ון
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./images/recipes/piza_i.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p class="card-calories">378 קלוריות</p>
+            <p class="card-text">
+              <b> פיצה דלת קלוריות: </b>
+              <br />
+              כוס (6 כפות או 140 גרם) קמח שקדים
+              <br />
+              2 ביצים
+              <br />
+              2 כפות שמן זית
+              <br />
+              רבע כוס מים
+              <br />
+              2 כפות רסק עגבניות איכותי, ללא תוספת סוכר
+              <br />
+              כף רוטב פסטו מוכן, ללא תוספת סוכר
+              <br />
+              גבינת מוצרלה או כל גבינה שאוהבים, מגורדת
+              <br />
+              תוספות - איזה שאוהבים
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="cards_bottom">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./images/recipes/cabab.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-calories">480 קלוריות</p>
+          <p class="card-text">
+            <b> קבב מעדשים ירוקות: </b>
+            <br />
+            כוס עדשים ירוקות
+            <br />
+            ½ כפית מלח ים דק
+            <br />
+            2 פלפלים ירוקים חריפים, ללא גרעינים, קצוצים
+            <br />
+            2 שיני שום, קצוצות
+            <br />
+            1 כף כוסברה טרייה, קצוצה דק
+            <br />
+            ¼ כוס פירורי לחם ללא גלוטן
+            <br />
+            טחינה מוכנה, כרוטב
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./images/recipes/krovit.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-calories">295 קלוריות</p>
+          <p class="card-text">
+            <b> כרובית אפויה עם מוצרלה: </b>
+            <br />
+            כרובית אחת
+            <br />
+            רבע כוס שמן זית
+            <br />
+            2 כפות פרמזן מגורד
+            <br />
+            2 שיני שום כתושים
+            <br />
+            100 גרם גבינת מוצרלה מגורדת
+            <br />
+            אופציונלי: פטרוזיליה קצוצה
+            <br />
+            מלח ופלפל שחור לפי הטעם
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./images/recipes/pankek.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-calories">328 קלוריות</p>
+          <p class="card-text">
+            <b> פנקייק חלבון: </b>
+            <br />
+            2 ביצים
+            <br />
+            60 גרם קמח שיבולת שועל
+            <br />
+            1 סקופ של אבקת חלבון
+            <br />
+            חצי כוס סויה
+            <br />
+            חצי כפית מלח
+            <br />
+            כפית אבקת אפייה
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="fixed_footer">
+      <footer>
+        <nav
+          class="navbar navbar-expand-md bg-dark navbar-dark"
+          style="width: 100%"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar1"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="navbar-nav mr-left">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"
+                >&copy; 2022 IDG. All Rights Reserved</a
+              >
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" onclick="notAvaliable()" href="#">תנאי שימוש</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="notAvaliable()" href="#">מדיניות פרטיות</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="notAvaliable()" href="#">קריירה</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="notAvaliable()" href="#">אבטחת מידע</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <script src="JavaScript/nwejava.js"></script>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>IDG - Menu</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a33f9f7185.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link href="http://font.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/newStyle.css">
+</head>
+
+<body>
+    <header>
+      <div class="row">
+          <div class="col-lg-12 col-sm-12 headerStyle">
+          <img src="images/IDG.png" height="250" width="250">
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-md bg-light navbar-light" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-left">
+                <li class="nav-item"><a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item"><a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item"><a class="nav-link" onclick="notAvaliable()" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li class="nav-item">
+                <a class="nav-link" onclick="notAvaliable()" href="#">צור קשר</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" h onclick="notAvaliable()"ref="#">התחברות</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="notAvaliable()" href="#">הרשמה</a>
+                </li>
+            </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="coaches.html">המאמנים שלנו</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recipes.html">מתכונים</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">בניית תפריט</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="includes/training.php">אימונים</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">דף הבית</a>
+            </li>
+            <li class="nav-item">
+                <img src="images/dumbell.png" alt="..." height="36">
+            </li>
+          </ul>
+        </div>  
+      </nav>
+  </header>
+  <main class="container" dir="rtl">
+    <div  class="row">
+        <h1 class="textCenter">חשב הקלוריות</h1>
+        <p class="textCenter">בעמוד הזה אנחנו נבקש ממכם את כל הפרטים הנחוצים כדי לדעת לבנות לכם תפריט אוכל שמתאים למטרות שלכם</p>
+    </div>
+    <section id="section1" class="row">
+        <div id="div2" class="col-lg-6">
+            <h1 class="textCenter">BMR - Basal Metabolic Rate</h1>
+            <p class="textCenter">המושג BMR נועד לאפשר לנו לאמוד את כמות הקלוריות אותה אנו מוציאים. ההגדרה היא מינימום האנרגיה אותה אנחנו מוציאים כדי לשמור על תפקודי הגוף הבסיסיים. אנחנו מוציאים הרבה אנרגיה לתפקודי גוף בסיסיים כמו זרימת דם, עיכול המזון, נשימה, שמירה על חום הגוף, התחדשות תאים ועוד. למעשה רוב האנרגיה של האדם הממוצע מושקעת בתפקודי הגוף הבסיסיים הללו. המדד הזה נועד להעריך את כמות האנרגיה הזו.
+
+                בנוסף ל - BMR אנחנו רוצים לחשב את כמות הקלוריות שאת/ה צריכים לצרוך ביום כדי לקדם את המטרה שלך(לעלותבמשקל/לרדת במשקל/לשמור על המשקל)
+                
+                בהתאם למטרות שלך, המחשבון למטה יחשב ויציין עבורך כמה קלוריות אתה צריך לצרוך בכל יום!
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <form class="imgBorder" id="BMRForm">
+                <div class="form-row">
+                  <div class="form-group col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <label for="age">גיל</label>
+                    <input type="number" class="form-control" id="age" name="age" min="1" max="120" placeholder="גיל" required>
+                  </div>
+                  <div class="form-group col-xl-4 col-lg-4 col-md-4 col-sm-12" >
+                    <label for="weight">משקל (בקילוגרמים)</label>
+                    <input type="number" class="form-control" id="weight" name="weight" min="1" max="300" placeholder="משקל" required>
+                  </div>
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                    <label for="inputAddress">גובה</label>
+                    <input type="number" class="form-control" id="height" name="height" min="1" max="300" placeholder="גובה" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="activity-level">רמת פעילות יומית</label>
+                      <select id="activity-level" name="activity-level" class="form-control" required>
+                          <option value="">בחר</option>
+                          <option value="sedentary">לא פעיל בכלל</option>
+                          <option value="lightly-active">קצת פעיל</option>
+                          <option value="moderately-active">פעיל</option>
+                          <option value="very-active">ממש פעיל</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="goal">מטרה</label>
+                      <select id="goal" name="goal" class="form-control" required>
+                        <option value="">בחר</option>
+                        <option value="maintain">לשמור על המשקל</option>
+                        <option value="lose">להוריד משקל</option>
+                        <option value="gain">לעלות משקל</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="gender">מגדר</label>
+                      <select id="gender" name="gender" class="form-control" required>
+                        <option value="">בחר</option>
+                        <option value="male">זכר</option>
+                        <option value="female">נקבה</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div align="center"  class="form-group col-lg-12">
+                        <input type="button" class="btn btn-primary" onclick="calculateBMR()" value="חשב">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <p class="textCenter" id="BMRResult"></p>
+                        <p class="textCenter" id="validationBMR"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <div class="row">
+      <hr/>
+    </div>
+    
+    <figure id="sladeUp" class="row">
+      <div align="center" class="col-lg-12 ">
+        <img  class="img-fluid imgBorder"  src="images/menuImages/wigth3.jpeg">
+      </div>
+    </figure>
+    <div class="row">
+      <div align="center" class="col-lg-12">
+        <input type="button" id="btn2" class="btn btn-primary"value ="תלחץ להעלמת התמונה">
+      </div>
+    </div>
+    <div class="row">
+      <div align="center" class="col-lg-12">
+        <input type="button" id="btn3" class="btn btn-primary"value = "תלחץ להחזרת התמונה">
+      </div>
+    </div>
+    <div class="row">
+      <hr/>
+    </div>
+    <section class="row">
+        <div id="div1" class="col">
+            <h1 class="textCenter">מחשבון קלוריות</h1>
+            <p class="textCenter">בחלק הזה אתם יכולים לבחור מאכלים ולחשב את הקלוריות שלהם בעזרת המחשבון הקלורי שלנו</p>
+            <p class="textCenter"><b> כל מאכל מחושב לפי כמות של 100 גרם</b></p>
+        </div>
+        <div class="col">
+            <form class="imgBorder" id="calorieForm">
+                <div class="form-row">
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="protain">חלבונים</label>
+                      <select id="protain" name="protain" class="form-control" required>
+                          <option value="0">בחר</option>
+                          <option value="165">חזה עוף</option>
+                          <option value="244">סינטה</option>
+                          <option value="144">כתף בקר</option>
+                          <option value="98">קוטג'</option>
+                          <option value="104">טונה</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="pahmemot">פחמימות</label>
+                      <select id="pahmemot" name="pahmemot" class="form-control" required>
+                        <option value="0">בחר</option>
+                        <option value="120">אורז</option>
+                        <option value="100">תפוחי אדמה</option>
+                        <option value="131">פסטה</option>
+                        <option value="86">בטטה</option>
+                        <option value="120">קינואה</option>
+                        <option value="342">בורגול</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="fat">שומנים</label>
+                      <select id="fat" name="fat" class="form-control" required>
+                        <option value="0">בחר</option>
+                        <option value="160">אבוקדו</option>
+                        <option value="575">שקדים</option>
+                        <option value="534">זרעי פשתן</option>
+                        <option value="588"> חמאת בוטנים</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                      <label for="protainAmount">כמות חלבונים</label>
+                      <input type="number" class="form-control-md" id="protainAmount" name="protainAmount" min="1" max="10" placeholder="כמות" required>
+                    </div>
+                    <div class="form-group col-xl-4 col-lg-4 col-md-4 col-sm-12" >
+                      <label for="pahmemotAmount">כמות פחמימות</label>
+                      <input type="number" class="form-control-md" id="pahmemotAmount" name="pahmemotAmount" min="1" max="10" placeholder="כמות"required>
+                    </div>
+                    <div class="form-group col-xl-4 col-lg-4 col-sm-12 col-md-4">
+                      <label for="fatAmount">כמות שומנים</label>
+                      <input type="number" class="form-control-md" id="fatAmount" name="fatAmount" min="1" max="10" placeholder="כמות" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div align="center" class="form-group col-lg-12 center">
+                        <input  type="button" id="btn1" class="btn btn-primary" onclick="calculateFood()" value="חשב">
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-lg-12 center">
+                    <p class="textCenter" id="validationCalories"></p>
+                  </div>
+               </div>
+               <div class="form-row">
+                 <div id="div4" align="center" class="form-group col-lg-12 center">
+                  <audio controls>
+                    <source src="audio/sulaz.mp3" type="audio/ogg">
+                  </audio>
+                 </div>
+               </div>
+            </form>
+        </div>
+    </section>
+
+  </main>
+
+<footer>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark"  >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav mr-left">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">&copy; 2022 IDG. All Rights Reserved</a>
+          </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+          
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#">תנאי שימוש</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" onclick="notAvaliable()" href="#">מדיניות פרטיות</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="notAvaliable()" href="#">קריירה</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="notAvaliable()" href="#">אבטחת מידע</a>
+          </li>
+          
+        </ul>
+      </div>  
+    </nav>
+  </footer>
+  <script src="JavaScript/nwejava.js"></script>
+</body>
+</html>
